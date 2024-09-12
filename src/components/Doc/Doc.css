@@ -1,0 +1,19 @@
+.downloadbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: "Nexa";
+    text-decoration: none;
+    border-radius: 45px;
+    transition: filter .5s ease-in-out;
+}
+
+.downloadbutton:hover{
+    filter:invert();
+}

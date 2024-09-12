@@ -1,0 +1,120 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+.Logo{
+    position: absolute;
+    width: 155px;
+    top: 33%;
+    left: 5%;
+    border-radius: 15px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    position: absolute;
+    font-size: 80px;
+    top: 25%;
+}
+h4{
+    position: absolute;
+    font-size: 28px;
+    top: 44%;
+    color: #eeeeee65;
+}
+
+.hide{
+    display: none;
+}
+
+
+.Buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    right: 5%;
+    top: 28%;
+}
+
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    height: 60px;
+    width: 60px;
+    background-color: #0a0a0a;
+    border-radius: 90px;
+    transition: width 1s ease, background-color 1s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Button>h6{
+    color: #e2e2e2;
+    opacity: 0;
+    font-size: 18px;
+    transition: opacity .5s ease;
+}
+
+.Button>img{
+    position: absolute;
+    color: #e2e2e2;
+    font-size: 18px;
+    transition: opacity 1s ease;
+
+}
+
+
+
+.Button:hover{
+    margin: 15px;
+    height: 60px;
+    width: 150px;
+    color: #e2e2e2;
+    background-color: #141414;
+    border: 5px groove #eba031;
+    border-radius: 90px;
+}
+
+.Button:hover img {
+    opacity: .1; /* Muestra el texto al hacer hover */
+    visibility: visible;
+    transition: opacity 1s ease;
+
+}
+
+.Button:hover h6 {
+    opacity: 1; /* Muestra el texto al hacer hover */
+    visibility: visible;
+    transition: opacity 1s ease;
+}
+
+.indicator{
+    display: flex;
+    justify-content: center;
+}
+
+.indicatorImg{
+    position: absolute;
+    bottom: 10px;
+    animation: osilation .7s infinite ease-in-out alternate;
+
+}
+
+
+@keyframes osilation {
+    from   { bottom: 25px; }
+    to     { bottom: 10px; }
+}

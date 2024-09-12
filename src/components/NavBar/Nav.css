@@ -1,0 +1,20 @@
+.custombutton{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:991px){
+    .custombutton{
+        display: block;
+        background-color: var(--transparent);
+        height: auto;
+        border: 0;
+    }
+}
