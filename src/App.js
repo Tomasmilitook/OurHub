@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes, Link} from 'react-router-dom';
 import { useEffect } from 'react';
-
+import { Analytics } from "@vercel/analytics/react"
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 
@@ -97,6 +97,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar/>
+        <Analytics/>
         <Routes>
             {/*Home*/}
 
